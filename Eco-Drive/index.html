@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/test.js"></script>
+    <title>BO-Periode-1.3</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <article class="cardtop card--shadow">
+                <img class="imgtop" src="img/Eco-Drive-Logo.png" alt="Het Logo van Eco Drive">
+                <p class="ptop">Eco Drive</p>
+            </article>
+        </header>
+
+        <article class="cardtijd card--shadow card">
+            <p class="datump"><span id='date-time'></span>.</p>
+            <script>
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                </script>
+        </article>
+        <article class="sunrise card card--shadow">
+            <p class="suntime">Zonsopkomst & Zonsondergang</p>
+        </article>
+
+        <article class="weather-card card card-2 card--shadow">
+            <p class="weatherstatus">Weerbericht</p>
+        </article>
+
+        <figure class="rij2">
+            <article class="cardr2"></article>
+        </figure>
+    </main>
+
+</body>
+</html>
