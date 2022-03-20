@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+html{
     font-size: 62.5%;
+}
+
+body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,9 +20,10 @@ body{
 }
 
 .klokje--cirkel{
-    width: 5rem;
-    height: 5rem;
-    border: 0.2rem solid black;
+    width: 8rem;
+    height: 8rem;
+    border: 0.3rem solid black;
+    background: #eeeeee;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -27,21 +31,23 @@ body{
     position: relative;
 }
 
-.klokje--cirkel__wijzer1{
-    width: 0.2rem;
-    height: 2rem;
-    border-radius: 0.2rem;
+.klokje--cirkel__wijzer{
     background: black;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    width: 0.3rem;
+
+}
+
+.klokje--cirkel__wijzer1{
+    height: 3.2rem;    
     transform: translateY(-50%)
 }
 
 .klokje--cirkel__wijzer2{
     position: absolute;
-    top: 0.855rem;
-    left: 2.75rem;
-    width: 0.2rem;
-    height: 1.7rem;
-    border-radius: 0.2rem;
-    background: black;
-    transform: rotate(45deg);
+    top: 3.299rem;
+    left: 4.3rem;
+    height: 2.2rem;
+    transform: rotate(135deg);
 }
