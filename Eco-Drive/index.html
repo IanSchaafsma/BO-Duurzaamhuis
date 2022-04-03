@@ -5,37 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/test.js"></script>
-    <title>BO-Periode-1.3</title>
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <header class="header">
-            <article class="cardtop card--shadow">
-                <img class="imgtop" src="img/Eco-Drive-Logo.png" alt="Het Logo van Eco Drive">
-                <p class="ptop">Eco Drive</p>
-            </article>
-        </header>
-
-        <article class="cardtijd card--shadow card">
+    <ul class="cards">
+        <li class="card card--first">
+            <img class="img-ecodrive" src="img/Eco-Drive-Logo.png" alt="Eco Drive logo">
+            <h2>Eco Drive</h2>
+        </li>
+        <li class="card card--second">
+            <h2>De Datum/Tijd:</h2>
             <p class="datump"><span id='date-time'></span>.</p>
             <script>
                 var dt = new Date();
                 document.getElementById('date-time').innerHTML=dt;
                 </script>
-        </article>
-        <article class="sunrise card card--shadow">
-            <p class="suntime">Zonsopkomst & Zonsondergang</p>
-        </article>
+        </li>
 
-        <article class="weather-card card card-2 card--shadow">
-            <p class="weatherstatus">Weerbericht</p>
-        </article>
+        <li class="card card--third">
+            <h2>Tijd van zons opkomst/ondergang:</h2>
+            <p>hier komt nog een datum</p>
+        </li>
 
-        <figure class="rij2 card">
-            <article class="cardr2"></article>
-        </figure>
-    </main>
-
+        <li class="card card--fourth">
+            <h2>Binnetemparatuur:</h2>
+            <p>Hier komt de graden </p>
+        </li>
+        
 </body>
 </html>
