@@ -8,28 +8,33 @@
     <link rel="stylesheet" href="/Eco-Drive/js/main.js">
     <title>🌿 Eco-Drive</title>
 </head>
-<body>
+<body onload="startTime()">
+
     <ul class="cards">
-        
         <li class="card card--first">
-            <!-- <img class="img-logo" src="img/Eco-Drive-Logo.png" alt="Eco Drive logo">
-            <h2>Eco Drive</h2> -->
+            <img class="img-logo" src="img/Eco-Drive-Logo.png" alt="Eco Drive logo">
+            <h2>Eco Drive - Bladomië</h2>
         </li>
 
         <li class="card card--second">
-            <!-- <h2>De Datum/Tijd:</h2>
-            <p class="datump"><span id='date-time'></span>.</p>
-            <script>
-                var dt = new Date();
-                document.getElementById('date-time').innerHTML=dt;
-                </script> -->
+            <figure class="klokje">
+                <div class="klokje--cirkel">
+                    <div class="klokje--cirkel__wijzer klokje--cirkel__wijzer1"></div>
+                    <div class="klokje--cirkel__wijzer klokje--cirkel__wijzer2"></div>
+                </div>
+            </figure>
+            <h3 class="card--datumTijd" id="js--time"></h3>
+            <h2 class="card--datumTijd" id="js--date"></h2>   
         </li>
-
+ 
         <li class="card card--third"></li>
 
         <li class="card card--fourth"></li>
 
-        <li class="card card--fifth"></li>
+        <li class="card card--fifth">
+            <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-225bc1df-08c2-417e-a0cc-0205b70726cc"></div> -->
+        </li>
 
         <li class="card card--sixth"></li>
 
@@ -37,9 +42,16 @@
 
         <li class="card card--eight"></li>
 
-        <li class="card card--ninth"></li>
+        <li class="card card--ninth">
+            <canvas id ="myChart"></canvas></li>
 
         <li class="card card--tenth"></li>
         
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

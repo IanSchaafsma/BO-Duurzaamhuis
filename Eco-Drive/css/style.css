@@ -11,7 +11,8 @@ html{
 body{
     font-size: 2rem;
     font-family: sans-serif;
-    background: linear-gradient(90deg, #00ba13  90%, #009810);
+    background: linear-gradient(90deg, #00ba13  90%, #009810);    
+    min-height: 100vh;
 }
 
 .cards{
@@ -33,8 +34,25 @@ body{
 .card--first{
     grid-column: 12 / 19;
     grid-row: 2 / 5;
-    border-radius: 0rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.card--first > h2{
+    background: -webkit-linear-gradient(300deg, black, 50%, #009810);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card--first > img{
+    height: 6rem;
+    width: 6rem;
+    margin-right: 1.2rem;
+}
+
+
 .img-logo{
     width: 20%;
     height: 90%;
@@ -43,6 +61,16 @@ body{
 .card--second{
     grid-column: 2 / 8;
     grid-row: 6 / 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card--datumTijd{
+    background: -webkit-linear-gradient(60deg, black, 90%, #009810);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card--third{
@@ -58,6 +86,13 @@ body{
 .card--fifth{
     grid-column: 2 / 8;
     grid-row: 13 / 18;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.card--fifth > div{
+    clip-path: inset(0 0 65px 0);
 }
 
 .card--sixth{
@@ -78,9 +113,56 @@ body{
 .card--ninth{
     grid-column: 16 / 23;
     grid-row: 19 / 29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card--tenth{
     grid-column: 23 / 30;
     grid-row: 19 / 29;
+}
+
+
+
+
+
+/*css art*/
+
+.klokje{
+    transform: scale(75%);
+}
+
+.klokje--cirkel{
+    width: 8rem;
+    height: 8rem;
+    border: 0.3rem solid black;
+    background: #eeeeee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.klokje--cirkel__wijzer{
+    background: black;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    width: 0.3rem;
+
+}
+
+.klokje--cirkel__wijzer1{
+    height: 3.2rem;
+    width: 0.2rem;
+    transform: translateY(-50%)
+}
+
+.klokje--cirkel__wijzer2{
+    position: absolute;
+    top: 3.299rem;
+    left: 4.3rem;
+    height: 2.2rem;
+    transform: rotate(135deg);
 }
