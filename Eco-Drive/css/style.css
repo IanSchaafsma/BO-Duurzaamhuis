@@ -132,10 +132,15 @@ body{
     padding-top: 1.5rem;
     grid-column: 23 / 30;
     grid-row: 19 / 29;
-}
-.card--tenth > h2{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card--tenth > h2{
+    width: 100%;
+    padding-left: 12rem;
+    padding-bottom: 2.5rem;
 }
 
 
@@ -188,4 +193,41 @@ body{
     left: 4.3rem;
     height: 2.2rem;
     transform: rotate(135deg);
+}
+
+
+.containkleur{
+    height: 67%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.groen{
+    background: #00BA13;
+    width: 5.5rem;
+    height: 2rem;
+    border: black solid 0.2rem;
+}
+
+.blauw{
+    background: #36A2EB;
+    width: 5.5rem;
+    height: 2rem;
+    border: black solid 0.2rem;
+}
+
+.wit{
+    background: #EAF4EB;
+    width: 5.5rem;
+    height: 2rem;
+    border: black solid 0.2rem;
+}
+
+.roze{
+    background: #FF6384;
+    width: 5.5rem;
+    height: 2rem;
+    border: black solid 0.2rem;
 }
