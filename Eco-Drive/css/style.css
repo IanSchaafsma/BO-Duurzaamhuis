@@ -40,12 +40,6 @@ body{
     justify-content: center;
 }
 
-.card--first > h2{
-    background: -webkit-linear-gradient(300deg, black, 50%, #009810);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .card--first > img{
     height: 6rem;
     width: 6rem;
@@ -65,12 +59,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .card--datumTijd{
-    background: -webkit-linear-gradient(60deg, black, 90%, #009810);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
 }
 
 .card--third{
@@ -83,21 +76,30 @@ body{
     grid-row: 6 / 18;
 }
 
+.sliders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
 .card--fifth{
     grid-column: 2 / 8;
     grid-row: 13 / 18;
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-}
-
-.card--fifth > div{
-    clip-path: inset(0 0 65px 0);
 }
 
 .card--sixth{
     grid-column: 9 / 15;
     grid-row: 13 / 18;
+    display: flex;
+    justify-content: center;
+}
+
+.card--sixth > div{
+    clip-path: inset(0 0 65px 0);
+    transform: translateY(3rem);
 }
 
 .card--seventh{
@@ -108,6 +110,14 @@ body{
 .card--eight{
     grid-column: 9 / 15;
     grid-row: 19 / 29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card--eight{
+    width: 100%;
+    height: 100%;
 }
 
 .card--ninth{
@@ -119,8 +129,13 @@ body{
 }
 
 .card--tenth{
+    padding-top: 1.5rem;
     grid-column: 23 / 30;
     grid-row: 19 / 29;
+}
+.card--tenth > h2{
+    display: flex;
+    justify-content: center;
 }
 
 

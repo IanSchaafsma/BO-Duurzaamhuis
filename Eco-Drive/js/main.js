@@ -24,7 +24,7 @@ function startTime(){
 /**Dit is de staaf diagram */
 
 var stars = [135850, 52122];
-var frameworks = ['Dodo Diamond hacks', 'Dodo Cotw pro']; 
+var frameworks = ['Apparaat 1', 'Apparaat 2']; 
 
 var ctx = document.getElementById('myChart');
 
@@ -33,7 +33,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: frameworks,
         datasets: [{
-             label: 'Energie Verbruik in KwH',
+             label: 'Energie Verbruik in KwH', 
              data: stars,
              backgroundColor: [
              "rgba(255, 99, 132, 0.2)",
@@ -49,7 +49,7 @@ var myChart = new Chart(ctx, {
                 "rgba(153, 102, 255, 1)",
              ],
              borderWidth: 3,
-             borderRadius: 30,
+             borderRadius: 35,
 
             }]
 
@@ -58,20 +58,40 @@ var myChart = new Chart(ctx, {
  });
 
 
- Chart.defaults.font.size = 12;
-let chart = new Chart(ctx, {
+
+
+
+
+/* Script grafiek*/
+const labels = [
+    'ding 1',
+    'ding 2',
+    'ding 3',
+    'ding 4',
+    'ding 5',
+    'ding 6',
+];
+  
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Gevevens opdracht Bo',
+      backgroundColor: 'rgba(75, 192, 192, 1)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 40, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
     type: 'line',
     data: data,
-    options: {
-        plugins: {
-            legend: {
-                labels: {
-                    // This more specific font property overrides the global property
-                    font: {
-                        size: 14
-                    }
-                }
-            }
-        }
-    }
-});
+    options: {}
+};
+
+  const myChart2 = new Chart(
+    document.getElementById('myChart2'),
+    config
+  );
+
+/* Weerbericht */
+
