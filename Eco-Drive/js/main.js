@@ -95,3 +95,28 @@ const labels = [
 
 /* Weerbericht */
 
+const locatie = "Amsterdam";
+const key = "ee2722efec52d9ea3a952f8cd36220f2";
+const API = `https://api.openweathermap.org/data/2.5/weather?q=${locatie}&appid=${key}&units=metric`;
+
+fetch(API)
+    .then(results => results.json())
+    .then(results => {
+        document.getElementById("name").innerHTML = results.name;
+
+        const icon = results.weather[0].icon;
+        document.getElementById("icon").innerHTML = `<img src=https://openweathermap.org/img/wn/${icon}@2x.png>`;
+
+        document.getElementById("temp").innerHTML = Math.round(results.main.temp) + "°C";
+
+        const res = results.weather[0].description;
+        const array = res.split(" ");
+        for (var i = 0; i < array.length; i++) {
+            array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+            const str2 = array.join(" ");
+        }
+        const str2 = array.join(" ");
+        document.getElementById("description").innerHTML = str2;
+    })
+    .catch(error => console.log(error));
+
